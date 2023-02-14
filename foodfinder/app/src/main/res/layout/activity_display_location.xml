@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/foodView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity=""
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/placeName"
+            android:text="RESTAURANT NAME"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/yesBtn"
+            android:layout_width="176dp"
+            android:layout_height="59dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="Yes, save to my list"
+            app:layout_constraintEnd_toStartOf="@+id/noBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/placeName" />
+
+        <Button
+            android:id="@+id/noBtn"
+            android:layout_width="176dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="No, show me another"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/yesBtn"
+            app:layout_constraintTop_toBottomOf="@+id/placeName" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+

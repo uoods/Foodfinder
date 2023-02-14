@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Food Finder</string>
+    <string name="GCP_MAPS_API_KEY"> put your api key here </string>
+</resources>
