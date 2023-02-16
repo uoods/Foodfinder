@@ -8,7 +8,7 @@ import retrofit2.http.Query
 
 //https://maps.googleapis.com/maps/api/place/nearbysearch/json?
 // location=-33.8670522%2C151.1957362&radius=1500&type=restaurant&
-// key=AIzaSyB9RAFY0tWdxszntOITDAqctsUgDtuT_lY
+// key=
 
 interface PlacesAPI {
     @GET("place/nearbysearch/json")
